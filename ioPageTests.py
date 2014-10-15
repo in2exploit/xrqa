@@ -1,6 +1,7 @@
 from selenium import webdriver
 import time
 
+#Change base url according to your environment
 base_url = "http://localhost:9966/petclinic/"
 
 driver = webdriver.Firefox()
