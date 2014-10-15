@@ -11,6 +11,7 @@ driver.get(base_url)
 assert "PetClinic :: a Spring Framework demonstration" in driver.title
 elem = driver.find_element_by_link_text("Find owners")
 elem.click()
+time.sleep(2)
 
 #searching owners
 elem = driver.find_element_by_class_name("form-actions")
@@ -18,7 +19,7 @@ find_owners_btn = elem.find_elements_by_tag_name("button")
 find_owners_btn[0].click()
 #todo i need to slow down the webdriver to wait table is populated with data.
 #todo change time.sleep() to wait command
-time.sleep(2)
+time.sleep(3)
 
 
 #switching to toolbar frame
